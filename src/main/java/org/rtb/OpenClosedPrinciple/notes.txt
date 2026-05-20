@@ -1,0 +1,10 @@
+In payment service class we are updating the existing class
+
+But when we have created a interface , then we can add new payment service without affecting the existing services
+Thus following OpenClosed priciple
+
+So in future we wnt to add net banking or cryto we can create a new class which will implement the IPayment Interface without affecting the existing implementations
+
+Basically we are creating abstraction using interfaces
+
+Here the Payment service is open for extention but closed for modification

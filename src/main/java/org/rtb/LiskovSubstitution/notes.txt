@@ -1,0 +1,5 @@
+If a child class extends parent class , then we should be able to REPLACE THE PARENT OBJECT WITH CHILD OBJECT without breaking the application behaviour
+
+Here if Crypto does not support refund then it breaks Liskov principle as it reduce the functionality of parent
+
+But if we create a separate interface named NonRefundablePayment then payment can extend it and child classes will maintain the contract of interface

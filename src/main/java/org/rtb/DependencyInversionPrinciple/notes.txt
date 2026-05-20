@@ -1,0 +1,15 @@
+High-level modules should not depend on low level modules.
+Both should depend on abstractions
+
+Instead of one class directly depending on another concreate class, they should depend on interfaces
+
+This promote loose coupling
+
+
+Tight coupling in UserService , for each db we need to add its dependent object
+
+To overcome this we can create a interface Database which can have methods and both mysql and mongodb will implement this interface
+
+Thus no dependency on any concreate class
+
+Userservice is now dependent on Interface Database

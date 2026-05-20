@@ -1,0 +1,9 @@
+A class should not be forced to implement methods which it does not use
+
+Instead of creating one large interface , we should create smaller and more specific interfaces
+
+Currently in Employee interface all the Eng Backend , DevOps, QA have to write methods which they dont use
+
+So instead we should create separate interface (more specific) like Tester , Coder, Deployer
+
+So BackendEng can implement Coder as well as Tester but no need for deployer similarly for others

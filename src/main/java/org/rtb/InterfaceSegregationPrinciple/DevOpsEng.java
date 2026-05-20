@@ -1,9 +1,9 @@
 package org.rtb.InterfaceSegregationPrinciple;
 
-public class BackendEng implements Employee{
+public class DevOpsEng implements Employee{
     @Override
     public void writeCode() {
-        System.out.println("writeCode");
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
@@ -13,6 +13,6 @@ public class BackendEng implements Employee{
 
     @Override
     public void deployCode() {
-
+        System.out.println("deployCode");
     }
 }
